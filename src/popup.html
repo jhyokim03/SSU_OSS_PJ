@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>뉴스링커</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 300px; /* 팝업의 너비 조정 */
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .article {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9; /* 기사의 배경색 */
+        }
+        .article h3 {
+            font-size: 16px;
+            margin: 0 0 5px;
+        }
+        .article p {
+            margin: 0 0 5px;
+            color: #555; /* 요약 텍스트 색상 */
+        }
+        .article img {
+            max-width: 100%; /* 이미지의 최대 너비를 100%로 설정 */
+            height: auto; /* 비율 유지 */
+            border-radius: 4px; /* 이미지 모서리 둥글게 */
+        }
+        #result {
+            margin-top: 10px; /* 결과 영역과 상단 요소 간격 */
+        }
+        .article:not(:last-child) {
+            border-bottom: 2px solid; /* 마지막 기사 제외 구분선 생성  */
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>유튜브 관련 뉴스</h2>
+    <div id="result">뉴스를 로딩 중입니다...</div> <!-- 초기 로딩 메시지 -->
+
+    <script src="popup.js"></script>
+</body>
+</html>
